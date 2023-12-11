@@ -1,0 +1,6 @@
+.idea/
+dist/
+node_modules/
+package-lock.json
+src/images/mold-ligth-blue-test.svg
+src/images/mold-ligth-blue-test-1.svg
