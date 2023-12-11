@@ -404,6 +404,12 @@ footer {
     bottom: -24px;
 }
 
+.fr-main-image {
+    height: 325px;
+    background: url(../images/main-image.png) no-repeat center center;
+    width: 100%;
+}
+
 @media (min-width: 1024px) {
     .max-w-1080 {
         max-width: 1080px;
