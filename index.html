@@ -53,7 +53,7 @@
     </div>
     <div class="fr-header-menu">
         <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between fr-header-menu-block">
                 <div class="dropdown fr-header-dropdown-catalog">
                     <a class="dropdown-toggle fr-header-dropdown-toggle-catalog" data-bs-toggle="dropdown"
                        aria-expanded="false">
@@ -97,7 +97,7 @@
     </section>
     <section>
         <div class="container position-relative">
-            <div class="row row-cols-xl-4 justify-content-center max-w-1120">
+            <div class="row row-cols-xl-4 justify-content-center max-w-1120 fr-catalog-menu-slick">
                 <div class="col">
                     <a class="fr-catalog-menu-item" href="#">
                         <img width="250" height="200" alt="" title="" src="images/Rectangle%2067.png"/>
@@ -171,7 +171,7 @@
                     </a>
                 </div>
             </div>
-            <div class="fr-more-container">
+            <div class="fr-more-container d-none d-md-block">
                 <a href="#" class="btn btn-outline-secondary">Детальніше</a>
             </div>
         </div>
@@ -673,6 +673,7 @@
     };
 
     var isNewsCarousel = false;
+    var isCatalogMenuCarousel = false;
 
     var initNewsCarousel = function () {
         var $frNewsSlick = $('.fr-news-slick');
@@ -680,9 +681,10 @@
         if ($frNewsSlick.exists()) {
             if (window.outerWidth <= 425) {
                 $frNewsSlick.slick({
-                    centerMode: true,
+                    // centerMode: true,
                     slidesToShow: 1,
                     arrows: false,
+                    variableWidth: true,
                 });
                 isNewsCarousel = true;
             } else if (isNewsCarousel === true) {
@@ -692,11 +694,33 @@
         }
     }
 
+    var initCatalogMenuCarousel = function () {
+        var $frCatalogMenuSlick = $('.fr-catalog-menu-slick');
+
+        if ($frCatalogMenuSlick.exists()) {
+            if (window.outerWidth <= 425) {
+                $frCatalogMenuSlick.slick({
+                    centerMode: true,
+                    slidesToShow: 1,
+                    arrows: false,
+                    variableWidth: true,
+                    centerPadding: '20px'
+                });
+                isCatalogMenuCarousel = true;
+            } else if (isCatalogMenuCarousel === true) {
+                $frCatalogMenuSlick.slick('unslick');
+                isCatalogMenuCarousel = false;
+            }
+        }
+    }
+
     $(function () {
+        initCatalogMenuCarousel();
         initNewsCarousel();
     });
 
     $(window).on('resize', function () {
+        initCatalogMenuCarousel();
         initNewsCarousel();
     });
 </script>

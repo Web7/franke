@@ -184,7 +184,7 @@ footer {
     position: relative;
     width: 250px;
     height: 270px;
-    margin: 20px auto;
+    margin: 20px 10px;
     display: block;
 }
 
@@ -327,7 +327,7 @@ footer {
     font-size: 14px;
     line-height: 17px;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 10px;
 }
 
 .fr-new-item-link span {
@@ -394,7 +394,11 @@ footer {
 }
 
 .fr-header-block {
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
+}
+
+.fr-header-menu-block {
+    margin: 0 auto;
 }
 
 .fr-inc {
@@ -431,5 +435,21 @@ footer {
 
     .fr-header-menu {
         padding-top: 0;
+    }
+
+    .fr-header-menu-block {
+        max-width: 1220px;
+    }
+
+    .fr-header-block {
+        max-width: 1245px;
+    }
+
+    .fr-catalog-menu-item {
+        margin: 20px auto;
+    }
+
+    .fr-new-item-link {
+        margin: 0 auto;
     }
 }
