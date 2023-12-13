@@ -420,6 +420,18 @@ footer {
     width: 100%;
 }
 
+.fr-header-dropdown-phone .dropdown-menu {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.fr-header-dropdown-phone .dropdown-item {
+    background-color: #d9d9d9;
+    color: #3d3b3b;
+    margin: 0 0 3px 0;
+}
+
 @media (min-width: 1024px) {
     .max-w-1080 {
         max-width: 1080px;
