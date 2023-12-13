@@ -108,6 +108,10 @@ footer {
     background: url(../images/acaunt.svg) no-repeat center center;
 }
 
+.fr-icon-mini {
+    background: url(../images/mini.svg) no-repeat center center;
+}
+
 .fr-icon-search {
     background: url(../images/search.svg) no-repeat center center;
 }
