@@ -50,8 +50,8 @@ header {
 
 .fr-header-nav {
     height: 83px;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 18px;
 }
 
 .fr-header-nav a {
@@ -558,6 +558,14 @@ footer p {
 @media (min-width: 1140px) {
     .fr-banner {
         background-size: contain;
+    }
+}
+
+@media (min-width: 1400px) {
+    .fr-header-nav {
+        height: 83px;
+        font-size: 20px;
+        line-height: 20px;
     }
 }
 
