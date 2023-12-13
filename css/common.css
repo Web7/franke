@@ -458,7 +458,9 @@ footer {
 .fr-main-image {
     height: 325px;
     background: url(../images/main-image.png) no-repeat center center;
-    width: 100%;
+    width: 100vw;
+    margin-left: -12px;
+    /*margin-right: -12px;*/
 }
 
 .fr-header-dropdown-phone .dropdown-menu {
@@ -518,6 +520,7 @@ footer p {
 
     .fr-main-image {
         height: 490px;
+        width: 100%;
     }
 
     .fr-banner {
