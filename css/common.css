@@ -143,6 +143,34 @@ footer {
     background: url(../images/scales-red.svg) no-repeat center center;
 }
 
+.fr-icon-scales {
+    background: url(../images/scales.svg) no-repeat center center;
+}
+
+.fr-icon-ri_messenger-fill {
+    background: url(../images/ri_messenger-fill.svg) no-repeat center center;
+}
+
+.fr-icon-youtube2 {
+    background: url(../images/youtube2.svg) no-repeat center center;
+}
+
+.fr-icon-viber2 {
+    background: url(../images/viber2.svg) no-repeat center center;
+}
+
+.fr-icon-ri_instagram2 {
+    background: url(../images/ri_instagram2.svg) no-repeat center center;
+}
+
+.fr-icon-ic_baseline-telegram {
+    background: url(../images/ic_baseline-telegram.svg) no-repeat center center;
+}
+
+.fr-icon-_facebook2 {
+    background: url(../images/_facebook2.svg) no-repeat center center;
+}
+
 .fr-header-menu-lang {
     display: inline-block;
     background: #d9d9d9;
@@ -284,6 +312,11 @@ footer {
     bottom: 0;
     z-index: 2;
     width: 100%;
+    left: 0;
+}
+
+.fr-news-slick {
+    min-height: 220px;
 }
 
 .bg-secondary .fr-more-container {
@@ -315,6 +348,10 @@ footer {
 
 .fr-news-section {
     margin-top: 105px;
+}
+
+.fr-news-section .slick-dots {
+    bottom: unset;
 }
 
 .fr-news-section-title {
@@ -432,6 +469,38 @@ footer {
     margin: 0 0 3px 0;
 }
 
+footer {
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+footer .fr-icon {
+    margin: 0 0 22px 0;
+}
+
+footer p {
+    margin-bottom: 22px;
+}
+
+.fr-footer-socials {
+    width: 134px;
+}
+
+.fr-footer-logo {
+    background: url(../images/Premium%20partner%20H%201.png) no-repeat center center;
+    width: 300px;
+    height: 39px;
+    margin-left: -16px;
+    margin-bottom: 54px;
+}
+
 @media (min-width: 1024px) {
     .max-w-1080 {
         max-width: 1080px;
@@ -485,4 +554,28 @@ footer {
     .fr-product-link {
         height: 251px;
     }
+}
+
+.slick-dots li {
+    width: 7px;
+    height: 7px;
+    margin: 0 2px 16px 2px;
+}
+
+.slick-dots li button {
+    width: 7px;
+    height: 7px;
+}
+
+.slick-dots li button:before {
+    background-color: #68686a;
+    opacity: 1;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    font-size: 0;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 0.5;
+    background-color: #e12b36;
 }
