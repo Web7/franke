@@ -98,7 +98,7 @@
         </div>
     </section>
     <section>
-        <div class="container position-relative">
+        <div class="container position-relative fr-menu-block">
             <div class="row row-cols-xl-4 justify-content-center max-w-1120 fr-catalog-menu-slick">
                 <div class="col">
                     <a class="fr-catalog-menu-item" href="#">
@@ -174,7 +174,7 @@
                 </div>
             </div>
             <div class="fr-more-container d-none d-md-block">
-                <a href="#" class="btn btn-outline-secondary">Детальніше</a>
+                <a href="#" class="btn btn-outline-secondary fr-btn-toggle-menu">Детальніше</a>
             </div>
         </div>
     </section>
@@ -792,6 +792,16 @@
         initNewsCarousel();
         // document.body.style.zoom = 1/devicePixelRatio;
         // document.body.style['-moz-transform'] = `scale(${1/devicePixelRatio})` ;
+    });
+
+    $(document).on('click', '.fr-btn-toggle-menu', function(e) {
+        $this = $(this);
+        $frMoreContainer = $this.closest('.fr-more-container');
+        $frMoreContainer.toggleClass('position-relative');
+
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
     });
 
     $(window).on('resize', function () {
