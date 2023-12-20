@@ -97,7 +97,7 @@
             <div class="mx-md-auto d-block fr-main-image"></div>
         </div>
     </section>
-    <section>
+    <section class="overflow-hidden">
         <div class="container position-relative fr-menu-block">
             <div class="row row-cols-xl-4 justify-content-center max-w-1120 fr-catalog-menu-slick">
                 <div class="col">
@@ -797,7 +797,9 @@
     $(document).on('click', '.fr-btn-toggle-menu', function(e) {
         $this = $(this);
         $frMoreContainer = $this.closest('.fr-more-container');
+        $frMenuBlock = $('.fr-menu-block');
         $frMoreContainer.toggleClass('position-relative');
+        $frMenuBlock.toggleClass('max-h-100');
 
         e.preventDefault();
         e.stopPropagation();
