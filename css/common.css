@@ -64,7 +64,7 @@ header {
     display: inline-block;
     width: 278px;
     height: 42px;
-    background: url(../images/logo-franke.png) no-repeat center center;
+    background: url(/uploads/images/logo-franke.png) no-repeat center center;
 }
 
 .fr-header-dropdown-toggle-city,
@@ -80,7 +80,7 @@ header {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url(../images/cyti.svg) no-repeat center center;
+    background: url(/uploads/images/cyti.svg) no-repeat center center;
 }
 
 main {
@@ -105,74 +105,74 @@ footer {
 }
 
 .fr-icon-account {
-    background: url(../images/acaunt.svg) no-repeat center center;
+    background: url(/uploads/images/acaunt.svg) no-repeat center center;
 }
 
 .fr-icon-mini {
-    background: url(../images/mini.svg) no-repeat center center;
+    background: url(/uploads/images/mini.svg) no-repeat center center;
 }
 
 .fr-icon-search {
-    background: url(../images/search.svg) no-repeat center center;
+    background: url(/uploads/images/search.svg) no-repeat center center;
 }
 
 .fr-icon-phone {
-    background: url(../images/phone.svg) no-repeat center center;
+    background: url(/uploads/images/phone.svg) no-repeat center center;
 }
 
 .fr-icon-basket {
-    background: url(../images/basket.svg) no-repeat center center;
+    background: url(/uploads/images/basket.svg) no-repeat center center;
 }
 
 .fr-icon-basket-white {
-    background: url(../images/basket2.svg) no-repeat center center;
+    background: url(/uploads/images/basket2.svg) no-repeat center center;
 }
 .fr-icon-basket-red {
-    background: url(../images/basket-red.svg) no-repeat center center;
+    background: url(/uploads/images/basket-red.svg) no-repeat center center;
 }
 
 .fr-icon-like {
-    background: url(../images/like.svg) no-repeat center center;
+    background: url(/uploads/images/like.svg) no-repeat center center;
 }
 
 .fr-icon-like-red {
-    background: url(../images/like-red.svg) no-repeat center center;
+    background: url(/uploads/images/like-red.svg) no-repeat center center;
 }
 
 .fr-icon-scales {
-    background: url(../images/scales.svg) no-repeat center center;
+    background: url(/uploads/images/scales.svg) no-repeat center center;
 }
 
 .fr-icon-scales-red {
-    background: url(../images/scales-red.svg) no-repeat center center;
+    background: url(/uploads/images/scales-red.svg) no-repeat center center;
 }
 
 .fr-icon-scales {
-    background: url(../images/scales.svg) no-repeat center center;
+    background: url(/uploads/images/scales.svg) no-repeat center center;
 }
 
 .fr-icon-ri_messenger-fill {
-    background: url(../images/ri_messenger-fill.svg) no-repeat center center;
+    background: url(/uploads/images/ri_messenger-fill.svg) no-repeat center center;
 }
 
 .fr-icon-youtube2 {
-    background: url(../images/youtube2.svg) no-repeat center center;
+    background: url(/uploads/images/youtube2.svg) no-repeat center center;
 }
 
 .fr-icon-viber2 {
-    background: url(../images/viber2.svg) no-repeat center center;
+    background: url(/uploads/images/viber2.svg) no-repeat center center;
 }
 
 .fr-icon-ri_instagram2 {
-    background: url(../images/ri_instagram2.svg) no-repeat center center;
+    background: url(/uploads/images/ri_instagram2.svg) no-repeat center center;
 }
 
 .fr-icon-ic_baseline-telegram {
-    background: url(../images/ic_baseline-telegram.svg) no-repeat center center;
+    background: url(/uploads/images/ic_baseline-telegram.svg) no-repeat center center;
 }
 
 .fr-icon-_facebook2 {
-    background: url(../images/_facebook2.svg) no-repeat center center;
+    background: url(/uploads/images/_facebook2.svg) no-repeat center center;
 }
 
 .fr-header-menu-lang {
@@ -403,7 +403,7 @@ footer {
 .fr-news-more:after {
     display: inline-block;
     content: "";
-    background: url(../images/arrow-right.svg) no-repeat center center;
+    background: url(/uploads/images/arrow-right.svg) no-repeat center center;
     width: 15px;
     height: 15px;
     position: relative;
@@ -422,7 +422,7 @@ footer {
 .fr-more-container .btn-outline-secondary:focus:after,
 .fr-news-more:hover:after,
 .fr-news-more:focus:after {
-    background-image: url(../images/arrow-right-white.svg);
+    background-image: url(/uploads/images/arrow-right-white.svg);
 }
 
 .fr-blog-block {
@@ -462,7 +462,7 @@ footer {
 
 .fr-main-image {
     height: 325px;
-    background: url(../images/main-image.png) no-repeat center center;
+    background: url(/uploads/images/main-image.png) no-repeat center center;
     width: 100vw;
     margin-left: -12px;
     /*margin-right: -12px;*/
@@ -505,7 +505,7 @@ footer p {
 }
 
 .fr-footer-logo {
-    background: url(../images/Premium%20partner%20H%201.png) no-repeat center center;
+    background: url(/uploads/images/Premium%20partner%20H%201.png) no-repeat center center;
     width: 300px;
     height: 39px;
     margin-left: -16px;
@@ -513,7 +513,7 @@ footer p {
 }
 
 .fr-banner {
-    background: url(../images/banner.png) no-repeat center center;
+    background: url(/uploads/images/banner.png) no-repeat center center;
     background-size: cover;
     width: 100vw;
     margin-left: -12px;
@@ -620,13 +620,15 @@ footer p {
         height: 251px;
     }
 
-    .fr-menu-block {
-        max-height: 650px;
+    .fr-toggle-block,
+	.fr-menu-block {
+        max-height: 600px;
     }
 }
 
+.fr-toggle-block,
 .fr-menu-block {
-    max-height: 940px;
+    max-height: 780px;
 }
 
 .max-h-100 {
